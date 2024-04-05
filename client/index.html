@@ -9,8 +9,25 @@
         <script src="main.js"></script>
     </head>
     <body>
-        <form enctype="multipart/form-data">
-            <input type="file" accept=".txt" />
-        </form>
+        <div class="container">
+            <form
+                method="post"
+                action="http://localhost:3000"
+                enctype="multipart/form-data"
+            >
+                <input type="file" name="file" accept=".txt" />
+                <progress value="10" max="100"></progress>
+                <button type="submit">Send</button>
+            </form>
+            <div class="result">
+                <h3 id="filename"></h3>
+                <p id="content"></p>
+            </div>
+        </div>
+        <script
+            src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+            integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

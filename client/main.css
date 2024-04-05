@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.result {
+    border: 2px solid black;
+    padding: 48px;
+    margin-block: 24px;
+    text-align: center;
+}
+
+progress {
+    display: block;
+    width: 256px;
+    height: 16px;
+    margin-block: 16px;
+    background-color: rgb(255, 120, 120);
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 24px;
+}
+
+button,
+input {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
